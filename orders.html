@@ -1,0 +1,155 @@
+<!--Jo Barkhuizen, Test Analyst, Web Design training-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PotBar Meat Supplies</title>
+  <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet" media="screen and (max-width: 960px)">
+   
+<style>
+  form {
+    margin-top: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5em;
+  }
+  ::placeholder {
+    color: lightgray;
+  }
+  .title {
+    background-color: #77212E;
+    padding-top: 0;
+    color: #ff8c00;
+  }
+  fieldset{
+        width: 600px;
+        position: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ff8c00;
+        border: none;
+    }
+ 
+  .contact-info label {
+      display: inline-block;
+      width: 110px;
+      text-align: right;
+      margin-right: 0.5em;
+      margin-left: 0;
+  }
+ 
+  .orders label {
+       display: inline-block;
+       width: 140px; 
+       text-align: left;
+ }
+
+ #number-label {
+        text-align: right;
+        margin-right: 0.3em;
+        padding-right: 1em;
+        padding-bottom: 0.5em;
+    }
+   
+button {
+  margin-left: 20em; 
+  margin-top: 1em;
+  background-color: #77212E;
+  padding: 0.5em;
+  color: #ff8c00;
+  }
+</style>
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Good Food</h1>
+      <img src="images/pexels-photo-440731.jpeg" alt="header image">
+   </header>
+       <nav class="navbar">
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="orders.html" class="active">Orders</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+<form action=" " method="post">
+
+  <fieldset class="title">
+    <h1 style="text-align: center;">Place your order here:</h1>
+  </fieldset>
+      
+  <fieldset class="contact-info">
+    <h3 style="color: #77212E;">Contact Information</h3>
+      <p><label id="name-label" for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" size="30" maxlength="256" required></p>
+      <p><label id="email-label" for="email">Email:</label>
+         <input type="email" name="email" id="email" placeholder="Enter Your Email" size="30" maxlength="256" required></p>
+      <p><label id="phone-label" for="phone">Phone:</label>
+         <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number" size="30" maxlength="256" required></p>
+<br>
+      <p><label id="street-label" for="Street">Street Address:</label>
+         <input type="text" name="street" id="street" placeholder="Your street" size="30" maxlength="300" required></p>
+      <p><label id="suburb-label" for="suburb"></label>
+         <input type="text" name="suburb" id="suburb" placeholder="Your Suburb" size="30" maxlength="256" required></p>
+      <p><label id="town-label" for="town"></label>
+          <input type="text" name="town" id="town" placeholder="Your Town" size="30" maxlength="256" required></p>
+      <p><label id="postal-label" for="Postal">Postal code:</label>
+          <input type="text" name="postal" id="postal" placeholder="Postal Code" size="10" maxlength="10" required></p>
+  </fieldset>
+            
+  <fieldset class="orders">
+    <h3 style="color: #77212E;">Click on the arrow to select the amount next to the product:</h3>
+      <p style="margin-bottom: -1em;color: #77212E;"><b>Whole Chicken:</b></p>
+        <p><label id="number-label" for="peri" class="chicken">Peri Peri:</label>
+              <input type="number" id="peri" min="0" max="100" placeholder="Qty">
+           <label id="number-label" for="bbq" class="chicken">BBQ:</label>
+              <input type="number" id="bbq" min="0" max="100" placeholder="Qty">
+           <label id="number-label" for="plain" class="chicken">Plain:</label>
+             <input type="number" id="plain" min="0" max="100" placeholder="Qty"></p>
+      <p style="margin-bottom: -1em;color: #77212E;"><b>Espatada:</b></P>
+        <P><label id="number-label" for="sc" class="chicken">Sweet Chilli:</label>
+              <input type="number" id="sc" min="0" max="100" placeholder="Qty">
+           <label id="number-label" for="BBQ" class="chicken">BBQ:</label>
+              <input type="number" id="BBQ" min="0" max="100" placeholder="Qty">
+            <label id="number-label" for="ss" class="chicken">Sweet & Sour:</label>
+               <input type="number" id="ss" min="0" max="100" placeholder="Qty"></p>
+  </fieldset>
+
+  <fieldset class="delivery">
+    <p style="color: #77212E; font-size: 1.2em;"><b>Select the delivery time:</b>
+      <select name="time">
+        <option>Between 9:00 - 11:00</option>
+        <option>Between 11:00 - 13:00</option>
+        <option>Between 13:00 - 15:00</option>
+        <option>Between 15:00 - 17:00</option>
+      </select>
+    </p>
+  </fieldset>
+            
+  <fieldset class="button">
+    <p><button type="button" onclick="alert('Thank you for your order, we will be in contact soon')">Submit</button></p>
+  </fieldset>
+
+</form>
+
+<footer class="footernav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="orders.html" class="active">Orders</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+</footer> 
+
+</body>
+</html>

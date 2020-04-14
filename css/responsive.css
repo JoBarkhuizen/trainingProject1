@@ -1,0 +1,11 @@
+
+/*Jo Barkhuizen, Test Analyst, Web Design training*/
+
+/* responsive.css  */
+
+/* 500 to 960 pixels */
+@media screen and (min-width: 31.25em) {
+
+/* under 500px */
+    @media screen and (max-width: 31.25em ){
+      

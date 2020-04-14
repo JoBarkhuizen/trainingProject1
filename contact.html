@@ -1,0 +1,150 @@
+<!--Jo Barkhuizen, Test Analyst, Web Design training-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PotBar Meat Supplies</title>
+  <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet" media="screen and (max-width: 960px)">
+   
+<style>
+form {
+   font-family: arial, sans-serif;
+   margin: 0 auto;
+    text-align: center;
+    float: center;
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: lightgray;
+ }
+ ::placeholder {
+    color: lightgray;
+ }
+ #title {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: blue;
+    margin-left: -.6em;
+    margin-right: -.6em;
+    color: white;
+ } 
+ .contact-us {
+    text-align: left;
+ }
+ select {
+   padding: 0.5em;  /*dit maak dropdown box groter*/
+ }
+ label {
+   display: inline-block;
+  width: 140px;
+  text-align: left;
+ }
+ #name-label {
+    width: 4em;
+    text-align: right;
+    margin-right: 0.5em;
+ }
+           
+#company-label {
+    width: 4em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+#email-label {
+    width: 4em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+#phone-label {
+    width: 4em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+button {
+   margin-bottom: 1em;
+   margin-left: 20em;
+   background-color: blue;
+   color: white;
+   padding: 0.5em
+}
+
+</style>
+
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+         <h1>Good Food</h1>
+         <img src="images/pexels-photo-440731.jpeg" alt="header image">
+      </header>
+      <nav class="navbar">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+         </ul>
+      </nav>   
+     
+       
+        
+<form id="contact-form" action="https://formspree.io/potbarmeat@gmail.com" method="POST">
+
+   <div class="contact-us">
+      <h2 id="title">Contact us:</h2>
+   </div>          
+                               
+   <div class="contact-us">
+     <p><h4 style="text-align: left;">Select the type of feedback:
+       <select name="feedback">
+          <option>Compliment</option>
+          <option>Query</option>
+          <option>Complaint</option>
+       </select></h4></p>
+   </div>
+
+   <div class="contact-us">
+      <p><label id="name-label" for="name">Name:</label>
+           <input type="text" name="name" id="name" placeholder="Enter Your Name" size="30" maxlength="256" required></p>
+      <p><label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" size="30" maxlength="256" required></p>
+      <p><label id="phone-label" for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number" size="30" maxlength="256" required></p>
+      <p><label id="company-label" for="company">Company:</label>
+            <input type="text" name="company" id="company" placeholder="Enter Your Company Name" size="30" maxlength="256"></p> 
+   </div>          
+
+   <div class="contact-us">         
+      <h4 style="text-align: left; padding-bottom: -1em; margin-bottom: 0em;">Tell us more: </h4>
+         <textarea placeholder="Place your comment here..." name="interest" rows="10" cols="50"></textarea>
+   </div>
+
+   <div class="contact-us">
+      <p><button id="submit" type="submit">Submit</button></p> 
+   </div>      
+
+</form>
+  
+<footer class="footernav">
+   <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+   </ul>
+</footer>
+
+</body>
+</html>
